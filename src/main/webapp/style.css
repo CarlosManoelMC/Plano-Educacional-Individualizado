@@ -1,0 +1,79 @@
+	@charset "UTF-8";
+	
+	body {
+		font-family: Arial, sans-serif;
+		background-color: #f7f7f7;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+	
+	.login-container {
+		background-color: #fff;
+		padding: 30px;
+		border-radius: 8px;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+		width: 320px;
+		max-width: 80%;
+		text-align: center;
+	}
+	
+	.login-container h2 {
+		margin-bottom: 20px;
+		color: #333;
+	}
+	
+	.login-container img {
+		width: 200px;
+	}
+	
+	.login-container input[type="text"], .login-container input[type="password"]
+		{
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		background-color: #f2f2f2;
+		transition: border-color 0.3s;
+	}
+	
+	.login-container input[type="text"]:focus, .login-container input[type="password"]:focus
+		{
+		outline: none;
+		border-color: #6c63ff;
+	}
+	
+	.login-container input[type="submit"] {
+		background-color: #6c63ff;
+		color: #fff;
+		border: none;
+		border-radius: 4px;
+		padding: 14px 20px;
+		cursor: pointer;
+		transition: background-color 0.3s;
+	}
+	
+	.login-container input[type="submit"]:hover {
+		background-color: #554fd8;
+	}
+	
+	.login-container .form-footer {
+		margin-top: 20px;
+		font-size: 14px;
+		color: #666;
+	}
+	
+	.login-container .checkbox-container {
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	
+	.login-container .checkbox-container input[type="checkbox"] {
+		margin-right: 5px;
+		cursor: pointer;
+	}

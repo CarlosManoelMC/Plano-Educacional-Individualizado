@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="imagens/logo_pei.png">
+</head>
+<body>
+	<!-- Libras -->
+	<div vw class="enabled">
+		<div vw-access-button class="active"></div>
+		<div vw-plugin-wrapper>
+			<div class="vw-plugin-top-wrapper"></div>
+
+		</div>
+
+	</div>
+	<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+	<script>
+		new window.VLibras.Widget('https://vlibras.gov.br/app');
+	</script>
+	
+ 	<div class="login-container">
+        <img src="imagens/logo_pei.png" alt="Logo do site">
+        <h2>Connected Education</h2>
+        <form method="GET" action="LoginServlet">
+            <input type="text" name="matricula" placeholder="Matricula" required>
+            <br>
+            <input type="password" name="senha" id="senha" placeholder="Senha" required>
+            <br>
+            <div class="checkbox-container">
+                <input type="checkbox" id="visualizar-senha" onchange="visualizarSenha()">
+                <label for="visualizar-senha">Visualizar senha</label>
+            </div>
+            <br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    <script src="index.js"></script> 
+</body>
+</html>
